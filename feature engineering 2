@@ -1,0 +1,10 @@
+import pandas as pd
+# Load the dataset
+data = pd.read_csv('c:\creditcard.csv')
+# Create new features
+data['half_amount'] = data['Amount'].apply(lambda x: int(x / 2))
+# Creating statistical features
+data['total_amount_std'] = data.groupby('half_amount')['Amount'].transform('std')
+print(data.info())
+# You can add more feature engineering steps based on your analysis
+# ✌it can show the output which we added the new column ans will be not sure 
