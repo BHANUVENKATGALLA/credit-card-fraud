@@ -6,3 +6,4 @@ data['hour_of_day'] = data['time'].apply(lambda x: int(x // 3600 % 24))
 data['total_amount_std'] = data.groupby('hour_of_day')['transaction_amount'].transform('std')
 
 # You can add more feature engineering steps based on your analysis
+#This code for only to know the structure not for the result to find the result you can check the another main file (feature enginnering 2 ) 
