@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-data = pd.read_csv('c:\\creditcard.csv')
+data = pd.read_csv('c:\creditcard.csv')
 
 # Explore the dataset
 print(data.head())
@@ -34,4 +34,3 @@ scaler = StandardScaler()
 data[['transaction_amount', 'time', 'numerical_feature1', 'numerical_feature2']] = scaler.fit_transform(data[['transaction_amount', 'time', 'numerical_feature1', 'numerical_feature2']])
 
 # Now the data is explored, missing values are handled, outliers are removed, and numerical variables are scaled.
-# You can proceed to the next tasks.
